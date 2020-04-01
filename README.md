@@ -4,7 +4,7 @@
 
 > Youtube vídeo: https://youtu.be/QSW1374FCt4
 
-> SatellaSoft: https:satellasoft.com
+> SatellaSoft: https://satellasoft.com
 
 # Modo de utilização
 
