@@ -3,22 +3,20 @@
 var hh = 0;
 var mm = 0;
 var ss = 0;
-
-var tempo = 1000;//Quantos milésimos valem 1 segundo?
 var cron;
 
 //Inicia o temporizador
-function start() {
-    cron = setInterval(() => { timer(); }, tempo);
+const start=()=>{
+    cron = setInterval(() => { timer(); }, 1000 /*<- Quantos milésimos valem 1 segundo?*/);
 }
 
 //Para o temporizador mas não limpa as variáveis
-function pause() {
+const pause=()=>{
     clearInterval(cron);
 }
 
 //Para o temporizador e limpa as variáveis
-function stop() {
+const stop=()=>{
     clearInterval(cron);
     hh = 0;
     mm = 0;
@@ -28,7 +26,7 @@ function stop() {
 }
 
 //Faz a contagem do tempo e exibição
-function timer() {
+const timer=()=>{
     ss++; //Incrementa +1 na variável ss
 
     if (ss == 59) { //Verifica se deu 59 segundos
